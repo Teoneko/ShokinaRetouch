@@ -65,7 +65,7 @@ letter-spacing: 0.07em;
 }
 
 
-.header-middle {
+.separator {
     border-top: 1px solid black;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -125,7 +125,7 @@ main {
     padding-right: 5%;
 }
 
-.gallery-column div {
+.gallery-item {
     margin-bottom: 9.91%;
 }
 
@@ -174,13 +174,23 @@ img {
         padding-left: 0;
     }
 }
-/*Footer*/
 
-.footer-top {
-    border-top: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+@media screen and (max-width: 450px) {
+    .navigation-header {
+        flex-direction: column;
+    }
+
+    .navigation-header a {
+        padding-bottom: 6%;
+        padding-left: 0;
+    }
+
+    body {
+        margin: 5px;
+    }
 }
+
+/*Footer*/
 
 .footer-bottom {
     display: flex;
