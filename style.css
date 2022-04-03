@@ -126,15 +126,40 @@ main {
 }
 
 .gallery-item {
+    position: relative;
     margin-bottom: 9.91%;
     cursor: pointer;
-    transition: 0.4s;
 }
 
 img {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.img-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000082;
+    color: white;
+    transition: 0.4s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.gallery-item:hover .img-hover {
+    z-index: 1;
+    opacity: 1;
+}
+
+.img-hover span {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media screen and (max-width: 750px) {
