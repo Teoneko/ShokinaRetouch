@@ -1,8 +1,17 @@
 @font-face {
-    font-family: 'CormorantGaramond-Light', serif;
-    src: 
-    url("/fonts/CormorantGaramond-Light.woff2") format("woff2"),
-    url("/fonts/CormorantGaramond-Light.woff") format("woff");
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/CormorantGaramond-Light.woff2') format('woff2'),
+    url('./fonts/CormorantGaramond-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('./fonts/Montserrat-Regular.woff') format('woff');
 }
 
 *:not(head),*::before,*::after {
@@ -40,12 +49,14 @@ header a {
 }
 
 .header-top-left h1 {
-font-family: 'CormorantGaramond-Light', serif;
+font-family: 'Cormorant Garamond', serif;
 font-size: 40px;
 font-stretch: 100%;
 font-style: normal;
 font-weight: 300;
 letter-spacing: 0.07em;
+line-height: normal;
+text-align: start;
 }
 
 .header-top-right {
@@ -60,7 +71,7 @@ letter-spacing: 0.07em;
 .navigation-header a {
     text-decoration-line: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-stretch: 100%;
     font-style: normal;
     font-weight: 400;
@@ -85,7 +96,7 @@ letter-spacing: 0.07em;
 }
 
 .header-bottom-left h2 {
-    font-family: 'CormorantGaramond-Light', serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 19px;
     font-stretch: 100%;
     font-style: normal;
@@ -99,7 +110,7 @@ letter-spacing: 0.07em;
 }
 
 .social a {
-    margin-left: 20px;
+    margin-left: 25px;
     color: black;
 }
 
@@ -170,6 +181,8 @@ img {
     transform: translateX(-50%);
 }
 
+/*adaptive*/
+
 @media screen and (max-width: 750px) {
     .flex-adaptive {
         flex-direction: column;
@@ -235,7 +248,6 @@ img {
     font-variant-ligatures: normal;
     font-variant-numeric: normal;
     font-weight: 400;
-    letter-spacing: 0.6px;
     line-height: normal;
     text-align: start;
     vertical-align: baseline;
