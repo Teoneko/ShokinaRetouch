@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="fontAwesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontAwesome/css/brands.css" rel="stylesheet">
+    <link href="fontAwesome/css/solid.css" rel="stylesheet">
+    <title>Retoucher Kate</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <h1>KATE SHOKINA</h1>
+            </div>
+            <div class="header-top-right">
+                <nav class="navigation navigation-header">
+                    <a href="index.html">WORK</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="#">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+
+        <hr>
+    </header>
+
+    <main>
+        <section class="caption">
+
+            <div class="caption-top">
+                <h2>CONTACT</h2>
+
+                <a href="mailto:shokina.retouch@gmail.com"><i class="fa-solid fa-envelope"></i>
+                    shokina.retouch@gmail.com</a>
+
+                <p>Or leave a message here</p>
+
+            </div>
+
+            <div class="form-wrapper">
+                <form action="#" id="form" class="form-body">
+
+                    <div class="form-fields">
+
+                        <label for="name">Name*</label>
+                        <input type="text" name="name" class="form-input _req">
+
+                        <label for="mail">E-mail*</label>
+                        <input type="mail" name="mail" class="form-input _req _email">
+
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" class="form-input">
+
+                        <label for="message">Message*</label>
+                        <textarea name="message" class="form-input _req"></textarea>
+
+                    </div>
+
+                    <div class="form-item">
+
+                        <label for="file-image">Choose file</label>
+
+                        <div class="file">
+                            <div class="file-item">
+                                <input type="file" accept=".jpg, .raw, .tiff, .psd" name="file-image" class="file-input" id="formImage">
+                                <div class="file-button">Choose</div>
+                            </div>
+                            <div class="file-preview" id="formPreview"></div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="form-button">SEND</button>
+
+                </form>
+            </div>
+
+        </section>
+
+
+        <section class="main-bottom">
+            <div class="socials">
+                <h3>SOCIALS</h3>
+                <ul>
+                    <li>
+                        <a href="http://facebook.com/shokinaretouch" target="_blank">
+                            facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/shokina.retouch/" target="_blank">
+                            instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/kate-shokina-906560235/" target="_blank">
+                            linkedin
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <span>© 2022 BY KATE & TEO</span>
+            </div>
+            <div class="social footer-bottom-right">
+                <a href="mailto:shokina.retouch@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="http://facebook.com/shokinaretouch" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/shokina.retouch/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/formProcessing.js"></script>
+
+</body>
+
+</html>
