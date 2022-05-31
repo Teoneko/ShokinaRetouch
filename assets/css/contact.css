@@ -47,6 +47,7 @@ main {
 
 header a {
 	color: black;
+	text-decoration: none;
 }
 
 .header-top {
@@ -98,17 +99,6 @@ hr {
 	margin-bottom: 1.1%;
 }
 
-@media screen and (max-width: 540px) {
-	.navigation-header {
-		flex-direction: column;
-	}
-
-	.navigation-header a {
-		margin-bottom: 5%;
-		margin-top: 4%;
-		padding-left: 0;
-	}
-}
 
 /*main*/
 
@@ -342,6 +332,18 @@ footer {
 	.main-top-right {
 		margin-left: 0;
 		margin-bottom: 3%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.navigation-header {
+		flex-direction: column;
+	}
+
+	.navigation-header a {
+		margin-bottom: 5%;
+		margin-top: 4%;
+		padding-left: 0;
 	}
 }
 
