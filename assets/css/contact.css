@@ -230,7 +230,6 @@ textarea:focus-visible {
 	cursor: pointer;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
 }
 
 .form-button:hover {
