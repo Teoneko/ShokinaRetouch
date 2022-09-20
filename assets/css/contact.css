@@ -228,6 +228,9 @@ textarea:focus-visible {
 	border: 1px black solid;
 	transition: 0.4s;
 	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 .form-button:hover {
